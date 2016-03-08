@@ -1,4 +1,6 @@
 
+'use strict'
+
 $(document).ready(function(){
 	/*--- Display information modal box ---*/
   	$(".what").click(function(){

@@ -52,7 +52,7 @@ $(document).ready(function(){
 		var guess = $('input#userGuess').val();
 		$('#userGuess').val('').focus();
 
-		if (!/^\s*\d+.?\s*$/.test(guess) || guess < 1 || guess > 100) {
+		if (!/^\s*\d+\s*$/.test(guess) || guess < 1 || guess > 100) { // Regexp accepts only consecutive numerals.
 			alert('Please enter a number between 1 and 100 inclusive.');
 			return;
 		}
